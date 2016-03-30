@@ -21,13 +21,21 @@ html,body{
     background-repeat: no-repeat;
     
 }
-.main-container-foto-frase{
+.main-container-foto-titulo{
 	z-index: 999;
-	text-align: center;
 	color: #ffffff;
 	font-family: Montserrat, sans-serif;
-	font-size: 1.6em;
+	font-size: 1.65em;
 	padding-top: 100px;
+	margin: 1em;
+
+}
+.main-container-foto-frase{
+	z-index: 999;
+	color: #DCDCDC;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.1em;
+	margin: 1.1em;
 
 }
 .segundo-container{
@@ -37,7 +45,7 @@ html,body{
 	font-family: Montserrat, sans-serif;
 }
 .segundo-container-frase{
-	margin-top: 15px;
+	margin: 1em;
 	
 }
 .terceiro-container{
@@ -83,6 +91,9 @@ html,body{
 
 }
 .textos{
+	
+}
+.center{
 	text-align: center;
 }
 
