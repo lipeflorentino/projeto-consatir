@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Consatir Consultoria</title>
 	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/.rslides.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -22,6 +23,7 @@
 	
 	<section class="main-container">
 	    <section class="main-container-foto center">
+	    	<figure class="main-container-logo center"><img src="imagens/logo.png"></figure> 
 			<h1 class="main-container-foto-titulo">Construimos pontes entre você e o seu sucesso.</h1>	
 			<p class="main-container-foto-frase">Queremos ajudar  a sua empresa a crescer, conheça nossos serviços.</p>
 		</section>	
@@ -44,10 +46,16 @@
 			<h1 class="titulo">Soluções</h1>	
 		</section>	
 		<section class="terceiro-container-slides">
-			<ul>
-				<li><img src="imagens/bkgd.jpg" height="408px" width="1440px" alt="" /></li>
-				<li><img src="imagens/bkgd.jpg" height="408px" width="1440" alt="" /></li>
+			<ul class="rslides">
+				<li><img src="imagens/azul.jpg" height="408px" width="1440px" alt="" /></li>
+				<li><img src="imagens/green.jpg" height="408px" width="1440px" alt="" /></li>
+				<li><img src="imagens/preto.jpg" height="408px" width="1440px" alt="" /></li>
 			</ul>
+			<script>
+			  $(function() {
+			    $(".rslides").responsiveSlides();
+			  });
+			</script>
 		</section>
 	</section>
 	<section class="quarto-container margem">
@@ -90,9 +98,9 @@
 		<p class="center">@ 2016 Consatir consultoria - Todos os direitos reservados</p>
 		<br>
 	</section>
+
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
-	<script type="text/javascript" src="js/slide.js"></script>
 </body>
 </html>
