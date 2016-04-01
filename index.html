@@ -5,10 +5,49 @@
 	<title>Consatir Consultoria</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	  <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top hidden-xs ">
             <div class="container-fluid">
                 <div class="navbar-header">
           	    <div>
@@ -19,15 +58,21 @@
     			</div>
     		</div>
     	</nav>
+    	<section class="logo hidden-lg">
+	    	<span class="logoum">Consatir Consultoria</span>
+	    </section>
 	
 	<section class="main-container">
 	    <section class="main-container-foto center">
 	    	<figure class="main-container-logo center"><img src="imagens/logo.png"></figure> 
 			<h1 class="main-container-foto-titulo">Construimos pontes entre você e o seu sucesso.</h1>	
-			<p class="main-container-foto-frase">Queremos ajudar  a sua empresa a crescer, conheça nossos serviços.</p>
+			<p class="main-container-foto-frase">Queremos ajudar  a sua empresa a crescer</p>
+			<a href="#"><button type="button" class="btn btn-success">Conheça nossos serviços</button></a>
 		</section>	
 	</section>
-	
+
+
+
 	<section class="segundo-container margem">
 		<h1 class="titulo">Quem Somos</h1>
 		<p class="segundo-container-frase">
@@ -40,18 +85,26 @@
             Temos o objetivo de contribuir para o desenvolvimento de pequenas e medias empresas, fornecendo serviçoes de qualidade adquirido com anos de experiência nos diversos ramos em que prestamos serviços, além de fornecer meios para adequar a empresa de nossos clientes ao padrão exigido pelas normas vigentes.
         <p>
 	</section>
-	<section class="terceiro-container">
+	
+		<!-- SLIDE-->
 		<section>
-			<h1 class="titulo">Soluções</h1>	
+			<h1 class="titulo center">Soluções</h1>	
 		</section>	
-		<section class="terceiro-container-slides">
-			<ul class="rslides">
-				<li><img src="imagens/azul.jpg" height="400px" width="1440px" alt="" /></li>
-				<li><img src="imagens/preto.jpg" height="400px" width="1440px" alt="" /></li>
-				<li><img src="imagens/green.jpg" height="400px" width="1440px" alt="" /></li>
-			</ul>
-		</section>
-	</section>
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagens/amb.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagens/doc.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imagens/TI.jpg" alt=""></div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+  
+    <!-- FIM SLIDE-->
+
 	<section class="quarto-container margem">
 		<h1 class="titulo">Parceiros</h1>
 		 <section class="quarto-container-bloco">
@@ -63,31 +116,35 @@
 			 <h3>BWM sistemas</h3>
 		 </section>
 	</section>
+
 	<section class="quinto-container margem">
-		<h1 class="titulo">Fale conosco</h1>
-		
 		<section class="quinto-container-form">
-			<a id="foxyform_embed_link_147277" href="http://br.foxyform.com/">foxyform</a>
+			<script type="text/javascript" src="https://form.jotformz.com/jsform/60914990717666"></script>
 		</section>
 	</section>
-	<section class="sexto-container margem">
-		<h1 class="titulo">Localização</h1>
+
+	<footer class="sexto-container">
+		<h1 class="titulo localizacao">Localização</h1>
 		<p class="center">
              Rua Carlos Nioac, número 34, Costa Azul - Rio das Ostras - RJ<br>
         </p>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1spt-BR!2sbr!4v1459179983760!6m8!1m7!1sytVjIr4At18KpRbW3d_3Cg!2m2!1d-22.51661195840326!2d-41.93074892506765!3f235!4f0!5f0.7820865974627469" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-	</section>
-	<section>
-		<p class="center">@ 2016 Consatir consultoria - Todos os direitos reservados</p>
-		<br>
-	</section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1spt-BR!2sbr!4v1459179983760!6m8!1m7!1sytVjIr4At18KpRbW3d_3Cg!2m2!1d-22.51661195840326!2d-41.93074892506765!3f235!4f0!5f0.7820865974627469" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <p class="direitos center">@2016 Copyright - Consatir Consultoria</p>
+    </footer>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slide.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script type="text/javascript" src="js/formContato.js"></script>
+	<script type="text/javascript"src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true
+		});
+	</script>
+
 	
 </body>
 </html>
