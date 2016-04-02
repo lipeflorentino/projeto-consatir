@@ -8,6 +8,20 @@ span{
 	margin: 0;
 	padding: 0;
 }
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
+}
+.header {
+   width: 100%;
+
+}
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+}
 .logo{
 	font-family: Montserrat, sans-serif;
 	text-align: center;
@@ -23,14 +37,13 @@ span{
 	font-family: Noto Serif;	
 }
 .main-container{
-	height: 100%;
+	height: 480px;
 	width: 100%;
 
 }
 .main-container-foto{
-    width: 100%;
     height: 100%;
-
+	width: 100%;
     background-position: center;
     background-position: top;
     background-image: url(../imagens/consatir.jpg);
@@ -58,8 +71,7 @@ span{
 
 }
 .segundo-container{
-	width: 100%;
-    height: 100%;
+	
 	text-align: center;
 	font-family: Montserrat, sans-serif;
 
@@ -71,10 +83,10 @@ span{
 }
 .terceiro-container{
 	height: 100%;
-	width: 100%;
+	
 }
 .terceiro-container-slides{
-	
+	background-image:url(../imagens/soluçoes.jpg);
 }
 .terceiro-container-slides-botao{
 	
@@ -85,8 +97,7 @@ span{
 }
 
 .quarto-container{
-	width: 100%;
-    height: 100%;
+	
 	text-align: center;
 	font-family: Montserrat, sans-serif;
 	
@@ -109,8 +120,6 @@ span{
 
 }
 .sexto-container{
-	height: 100%;
-	width: 100%;
 	background-color: #7d131a;
 	color: #fff;
 	overflow: auto;
@@ -127,7 +136,7 @@ span{
 	color: #006400;
 	font-family: Montserrat, sans-serif;
 	font-size: 1.8em;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	font-weight: bold;
 }
 .localizacao{
@@ -145,4 +154,28 @@ span{
 }
 .swiper-pagination-bullet{
 	background-color: #47d147 !important;
+}
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: table;
+}
+ 
+.clearfix:after {
+   clear: both;
+}
+.clearfix {
+   *zoom: 1;
+}
+*, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+.footer {
+   width: 100%;
+   margin-top: 2.4em;
+   margin-bottom: 2.4em;
+   float: left;
+   clear: both;
 }

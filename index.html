@@ -24,30 +24,43 @@
     .swiper-container {
         width: 100%;
         height: 100%;
+        background: #fff;
     }
     .swiper-slide {
-        text-align: center;
         font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
+        color:#fff;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 40px 60px;
     }
+    .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+    }
+    .swiper-slide .subtitle {
+        font-size: 21px;
+    }
+    .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+    }
+    
     </style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top hidden-xs ">
+<section class="container">
+		<nav class="navbar navbar-default navbar-fixed-top hidden-xs ">
             <div class="container-fluid">
                 <div class="navbar-header">
           	    <div>
@@ -75,38 +88,75 @@
 
 	<section class="segundo-container margem">
 		<h1 class="titulo">Quem Somos</h1>
-		<p class="segundo-container-frase">
-			<strong>A Consatir é uma empresa de consultoria que oferece serviços de exelência nos mais diversos seguimentos. Também oferecemos capacitação, regulamentação e soluções para sua empresa</strong>
-            <br></br>
+		<p class="segundo-container-frase"><strong>A Consatir é uma empresa de consultoria que oferece serviços de exelência para pequenas e medias empresas, nos mais diversos seguimentos. Também oferecemos capacitação, regulamentação e soluções para sua empresa.</strong></p>    
 
-            Possuimos um compromisso muito sério com as questões ambientais vigentes, por isso seguimos a risca as normas e orientações exigidas pela ISO14000. Também oferecemos aos nossos clientes soluções para se adequarem a essas normas.
-            <br></br>
-
-            Temos o objetivo de contribuir para o desenvolvimento de pequenas e medias empresas, fornecendo serviçoes de qualidade adquirido com anos de experiência nos diversos ramos em que prestamos serviços, além de fornecer meios para adequar a empresa de nossos clientes ao padrão exigido pelas normas vigentes.
-        <p>
+        <p class="segundo-container-frase">Possuimos um compromisso muito sério com as questões ambientais vigentes, por isso seguimos a risca as normas e orientações exigidas pela ISO14000. Também oferecemos aos nossos clientes soluções para se adequarem a essas normas.</p>
+            
+        <p class="segundo-container-frase">Temos a missão de agragar valor a sociedade, fornecendo serviçoes de qualidade adquirido com anos de experiência nos diversos ramos em que prestamos serviços, além de fornecer meios para adequar a empresa de nossos clientes ao padrão exigido pelas normas vigentes. Trabalhamos sempre com honestidade, confiança, transparência e compromisso total com a qualidade.</p>
+        <figure class="nav-img center"><img src="imagens/building104 (2).png"></figure>
 	</section>
 	
-		<!-- SLIDE-->
-		<section>
-			<h1 class="titulo center">Soluções</h1>	
-		</section>	
-	<div class="swiper-container">
+	<section class="terceiro-container margem">
+	<h1 class="titulo">Soluções</h1>
+		<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="parallax-bg terceiro-container-slides" data-swiper-parallax="-23%"></div>
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="imagens/amb.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imagens/doc.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="imagens/TI.jpg" alt=""></div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            
+            <div class="swiper-slide">
+                <div class="title titulo" data-swiper-parallax="-100">Petronect</div>
+                <div class="subtitle" data-swiper-parallax="-200">cadastro junto a petrobras</div>
+                <div class="text" data-swiper-parallax="-300">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title titulo" data-swiper-parallax="-100">Documentação</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-300">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title titulo" data-swiper-parallax="-100">QSMS</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-300">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title titulo" data-swiper-parallax="-100">Gestão Integrada</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-300">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title titulo" data-swiper-parallax="-100">Consultoria Ambiental</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-300">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                </div>
+            </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
     </div>
-  
-    <!-- FIM SLIDE-->
+	</section>
+    <!-- Swiper JS -->
 
 	<section class="quarto-container margem">
 		<h1 class="titulo">Parceiros</h1>
+		 <section class="quarto-container-bloco">
+			 <figure class="quarto-container-img"><img src="imagens/csaminerais.png"></figure>
+			 <h3>CSA minerais</h3>
+		 </section>
+		 <section class="quarto-container-bloco">
+			 <figure class="quarto-container-img"><img src="imagens/csaminerais.png"></figure>	
+			 <h3>BWM sistemas</h3>
+		 </section>
 		 <section class="quarto-container-bloco">
 			 <figure class="quarto-container-img"><img src="imagens/csaminerais.png"></figure>
 			 <h3>CSA minerais</h3>
@@ -132,18 +182,25 @@
 
         <p class="direitos center">@2016 Copyright - Consatir Consultoria</p>
     </footer>
-
+	
+</section>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slide.js"></script>
 	<script src="js/jquery.cycle.all.js"></script>
 	<script type="text/javascript" src="js/formContato.js"></script>
 	<script type="text/javascript"src="js/swiper.min.js"></script>
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-		pagination: '.swiper-pagination',
-		paginationClickable: true
-		});
-	</script>
+	
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        parallax: true,
+        speed: 600,
+    });
+    </script>
 
 	
 </body>
